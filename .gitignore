@@ -1,0 +1,7 @@
+/WeightTrack/bin
+/WeightTrack/obj
+/WeightTrack/*.db-wal
+/WeightTrack/*.user
+/WeightTrack/*.db
+/WeightTrack/*.db-shm
+/.vs/WeightTrack
