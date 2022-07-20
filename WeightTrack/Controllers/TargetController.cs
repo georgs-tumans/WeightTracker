@@ -32,6 +32,7 @@ namespace WeightTrack.Controllers
         /// <returns>A simple response with the ID of the newly created item</returns>
         [HttpPost]
         [Route("api/[controller]")]
+        [ProducesResponseType(typeof(AddResponse), 200)]
         public async Task<ActionResult<AddResponse>> AddTarget(AddItemRequest request)
         {
             try
@@ -68,6 +69,7 @@ namespace WeightTrack.Controllers
         /// <returns>A list of target objects</returns>
         [HttpGet]
         [Route("api/[controller]/GetAll")]
+        [ProducesResponseType(typeof(List<WeightTarget>), 200)]
         public async Task<ActionResult<List<WeightTarget>>> GetAll(DateTime? dateFrom, DateTime? dateTo)
         {
             try
@@ -101,6 +103,7 @@ namespace WeightTrack.Controllers
         [Route("api/[controller]/GetProgress")]
         [ProducesResponseType(typeof(string), (int)HttpStatusCode.NotFound)]
         [SwaggerResponse(404, Description = "Not found")]
+        [ProducesResponseType(typeof(ProgressResponse), 200)]
         public async Task<ActionResult<ProgressResponse>> GetProgress([Required]int targetId)
         {
             try

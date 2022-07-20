@@ -32,8 +32,7 @@ namespace WeightTrack.Controllers
         /// <returns>A simple response with the ID of the newly created item</returns>
         [HttpPost]
         [Route("api/[controller]")]
-        [ProducesResponseType(typeof(byte[]), (int)HttpStatusCode.BadRequest)]
-        [SwaggerResponse(400, Description = "Bad request")]
+        [ProducesResponseType(typeof(AddResponse), 200)]
         public async Task<ActionResult<AddResponse>> AddWeight(AddItemRequest request)
         {
             try
@@ -68,6 +67,7 @@ namespace WeightTrack.Controllers
         /// <returns>A list of weight objects</returns>
         [HttpGet]
         [Route("api/[controller]/")]
+        [ProducesResponseType(typeof(List<WeightEntry>), 200)]
         public async Task<ActionResult<List<WeightEntry>>> Get(DateTime? dateFrom, DateTime? dateTo)
         {
             try
