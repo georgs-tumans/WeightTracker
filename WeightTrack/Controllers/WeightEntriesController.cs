@@ -66,7 +66,7 @@ namespace WeightTrack.Controllers
         /// </summary>
         /// <returns>A list of weight objects</returns>
         [HttpGet]
-        [Route("api/[controller]/")]
+        [Route("api/[controller]")]
         [ProducesResponseType(typeof(List<WeightEntry>), 200)]
         public async Task<ActionResult<List<WeightEntry>>> Get(DateTime? dateFrom, DateTime? dateTo)
         {

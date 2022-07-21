@@ -5,3 +5,6 @@
 /WeightTrack/*.db
 /WeightTrack/*.db-shm
 /.vs/WeightTrack
+/.vs/ProjectEvaluation
+/WeightTracker.IntegrationTests/bin/Debug/net6.0
+/WeightTracker.IntegrationTests/obj

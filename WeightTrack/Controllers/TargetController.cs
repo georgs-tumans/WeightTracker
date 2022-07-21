@@ -100,7 +100,7 @@ namespace WeightTrack.Controllers
         /// </summary>
         /// <returns>An object containing current weight and target weight</returns>
         [HttpGet]
-        [Route("api/[controller]/GetProgress")]
+        [Route("api/[controller]/GetProgress/{targetId}")]
         [ProducesResponseType(typeof(string), (int)HttpStatusCode.NotFound)]
         [SwaggerResponse(404, Description = "Not found")]
         [ProducesResponseType(typeof(ProgressResponse), 200)]

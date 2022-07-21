@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32126.317
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeightTrack", "WeightTrack\WeightTrack.csproj", "{9392D04B-E85D-421D-96D5-C15CC1CFBE01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeightTrack", "WeightTrack\WeightTrack.csproj", "{9392D04B-E85D-421D-96D5-C15CC1CFBE01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeightTracker.IntegrationTests", "WeightTracker.IntegrationTests\WeightTracker.IntegrationTests.csproj", "{6CF3608B-95C8-45F2-B961-9A2F9636A3FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{9392D04B-E85D-421D-96D5-C15CC1CFBE01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9392D04B-E85D-421D-96D5-C15CC1CFBE01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9392D04B-E85D-421D-96D5-C15CC1CFBE01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CF3608B-95C8-45F2-B961-9A2F9636A3FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CF3608B-95C8-45F2-B961-9A2F9636A3FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CF3608B-95C8-45F2-B961-9A2F9636A3FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CF3608B-95C8-45F2-B961-9A2F9636A3FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
