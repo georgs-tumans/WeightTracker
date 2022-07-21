@@ -16,5 +16,7 @@ It allows adding simple weight and weight goal entries as well as listing the ex
 
 Tests can be run from Visual Studio or by command in the repo root directory (where the .sln file is located): `dotnet test`
 
-Tests are currently not automated and cannot be run via Docker
+Tests are currently not automated and cannot be run via Docker.
+
+**NB** There is currently an issue when running the tests for the very first time, has something to do with EF migrations. Any consequent run completes fine.
 
