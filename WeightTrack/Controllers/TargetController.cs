@@ -110,7 +110,7 @@ namespace WeightTrack.Controllers
             {
                 if (await _appDbContext.WeightTargets.Where(x => x.Id == targetId && x.Active == 1).AnyAsync())
                 {
-                    var latestEntry = await _appDbContext.WeightEntries.OrderByDescending(x => x.EntryDate).FirstOrDefaultAsync();
+                    var latestEntry = await _appDbContext.WeightEntries.OrderByDescending(x => x.EntryDate).OrderByDescending(x => x.Id).FirstOrDefaultAsync();
                     if (latestEntry is null)
                         return NotFound($"No weight entries currently");
 
